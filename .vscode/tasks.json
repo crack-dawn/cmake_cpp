@@ -14,7 +14,13 @@
         {
             "type": "shell",
             "label": "makefile: make",
-            "command": "mingw32-make.exe",
+            "windows":{
+                "command": "mingw32-make.exe",
+            },
+            "linux":{
+                "command": "make",
+            },
+            
             "group": "build",
             "options": {
                 "cwd": "${workspaceFolder}/build"

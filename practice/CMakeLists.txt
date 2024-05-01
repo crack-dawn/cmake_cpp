@@ -26,9 +26,9 @@ message("${PROJECT_NAME} 源文件列表 : ${SOURCE_FILES}")
 add_executable(${PROJECT_NAME} ${SOURCE_FILES}) 
 
 target_include_directories(${PROJECT_NAME} 
-    PUBLIC    ${HEADER_DIRECTORIES} 
-    PRIVATE   ${module2_dir}
-    PRIVATE   ${module1_dir}
+    PRIVATE     ${HEADER_DIRECTORIES} 
+    PRIVATE     ${module2_dir}
+    PRIVATE     ${module1_dir}
 )# 头文件包含
 
 set_target_properties(${PROJECT_NAME}  PROPERTIES  # 目标属性设置
@@ -41,13 +41,6 @@ target_link_libraries(${PROJECT_NAME}
     PRIVATE mylib::module1_shared
 )# 库模块包含
 
-# find_library(lib1 module1_shared PATHS ${TOTAL_OUTPUT_DIRECTORY})
-# find_library(lib2 module2_static PATHS ${TOTAL_OUTPUT_DIRECTORY})
-# message (" module1_shared ${lib1}")
-# message (" module1_shared ${lib2}")
-# target_link_libraries(${PROJECT_NAME} ${lib1} ${lib2})
-
-# target_link_options(${PROJECT_NAME} PRIVATE "-Wl,-rpath=${TOTAL_OUTPUT_DIRECTORY}") #添加执行调试的 静态动态库路径
 
 
 

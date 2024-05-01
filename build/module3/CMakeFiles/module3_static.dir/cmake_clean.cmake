@@ -1,8 +1,7 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/module3_static.dir/module3.cpp.obj"
-  "CMakeFiles/module3_static.dir/module3.cpp.obj.d"
-  "J:/workplace/cmake_cpp/Debug/bin/libmodule3_static_rename.a"
-  "J:/workplace/cmake_cpp/Debug/bin/libmodule3_static_rename.pdb"
+  "CMakeFiles/module3_static.dir/module3.cpp.o"
+  "libmodule3_static.a"
+  "libmodule3_static.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

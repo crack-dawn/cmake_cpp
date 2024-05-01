@@ -1,14 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/practice_main.dir/src/fun1.cpp.obj"
-  "CMakeFiles/practice_main.dir/src/fun1.cpp.obj.d"
-  "CMakeFiles/practice_main.dir/src/fun2.cpp.obj"
-  "CMakeFiles/practice_main.dir/src/fun2.cpp.obj.d"
-  "CMakeFiles/practice_main.dir/src/main.cpp.obj"
-  "CMakeFiles/practice_main.dir/src/main.cpp.obj.d"
-  "J:/workplace/cmake_cpp/Debug/bin/libpractice_main.dll.a"
-  "J:/workplace/cmake_cpp/Debug/bin/practice_main.exe"
-  "J:/workplace/cmake_cpp/Debug/bin/practice_main.exe.manifest"
-  "J:/workplace/cmake_cpp/Debug/bin/practice_main.pdb"
+  "../Debug/practice_main"
+  "../Debug/practice_main.pdb"
+  "CMakeFiles/practice_main.dir/src/fun1.cpp.o"
+  "CMakeFiles/practice_main.dir/src/fun2.cpp.o"
+  "CMakeFiles/practice_main.dir/src/main.cpp.o"
 )
 
 # Per-language clean rules from dependency scanning.

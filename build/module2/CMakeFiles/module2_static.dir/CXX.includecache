@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/cmake_cpp/module2/module2.cpp
+./module2.h
+/workspaces/cmake_cpp/module2/module2.h
+
+/workspaces/cmake_cpp/module2/module2.h
+iostream
+-
+

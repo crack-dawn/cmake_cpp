@@ -8,35 +8,48 @@
             "name": "gdb Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/Debug/bin/practice_main.exe",
-            "args": [],
             "stopAtEntry": true,
             "cwd": "${workspaceFolder}",
-            // "additionalSOLibSearchPath": "${workspaceFolder}\\Debug\\libs",
-            "environment": [
-                {
-                    "name": "PATH",
-                    "value": "${env:PATH};${workspaceFolder}\\Debug;${workspaceFolder}\\Debug\\bin;"
-                },
-            ],
-            
-            "externalConsole": false,
-            "MIMode": "gdb",
-            "miDebuggerPath": "gdb",
-            "setupCommands": [
-                {
-                    "description": "Enable pretty-printing for gdb使能GDB整齐打印",
-                    "text": "-enable-pretty-printing",
-                    "ignoreFailures": true
-                },
-                {
-                    "description": "Set Disassembly Flavor to Intel",
-                    "text": "-gdb-set disassembly-flavor intel",
-                    "ignoreFailures": true
-                }
-            ],
-            "preLaunchTask": "前置构建任务:Pre Build Task",
+            "windows": {
+                "program": "${workspaceFolder}/build/Debug/practice_main.exe",
+                "args": [],
+                "externalConsole": false,
+                "MIMode": "gdb",
+                "miDebuggerPath": "gdb",
+                "setupCommands": [
+                    {
+                        "description": "Enable pretty-printing for gdb使能GDB整齐打印",
+                        "text": "-enable-pretty-printing",
+                        "ignoreFailures": true
+                    },
+                    {
+                        "description": "Set Disassembly Flavor to Intel",
+                        "text": "-gdb-set disassembly-flavor intel",
+                        "ignoreFailures": true
+                    }
+                ],
+            },
+            "linux": {
+                "program": "${workspaceFolder}/build/Debug/practice_main",
+                "args": [],
+                "externalConsole": false,
+                "MIMode": "gdb",
+                "miDebuggerPath": "gdb",
+                "setupCommands": [
+                    {
+                        "description": "Enable pretty-printing for gdb使能GDB整齐打印",
+                        "text": "-enable-pretty-printing",
+                        "ignoreFailures": true
+                    },
+                    {
+                        "description": "Set Disassembly Flavor to Intel",
+                        "text": "-gdb-set disassembly-flavor intel",
+                        "ignoreFailures": true
+                    }
+                ],
+            },
 
+            "preLaunchTask": "前置构建任务:Pre Build Task",
         }
 
     ]

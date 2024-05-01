@@ -1,20 +1,31 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/workspaces/cmake_cpp/practice/src/fun1.cpp" "/workspaces/cmake_cpp/build/practice/CMakeFiles/practice_main.dir/src/fun1.cpp.o"
+  "/workspaces/cmake_cpp/practice/src/fun2.cpp" "/workspaces/cmake_cpp/build/practice/CMakeFiles/practice_main.dir/src/fun2.cpp.o"
+  "/workspaces/cmake_cpp/practice/src/main.cpp" "/workspaces/cmake_cpp/build/practice/CMakeFiles/practice_main.dir/src/main.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "DEBUG"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "J:/workplace/cmake_cpp/practice/src/fun1.cpp" "practice/CMakeFiles/practice_main.dir/src/fun1.cpp.obj" "gcc" "practice/CMakeFiles/practice_main.dir/src/fun1.cpp.obj.d"
-  "J:/workplace/cmake_cpp/practice/src/fun2.cpp" "practice/CMakeFiles/practice_main.dir/src/fun2.cpp.obj" "gcc" "practice/CMakeFiles/practice_main.dir/src/fun2.cpp.obj.d"
-  "J:/workplace/cmake_cpp/practice/src/main.cpp" "practice/CMakeFiles/practice_main.dir/src/main.cpp.obj" "gcc" "practice/CMakeFiles/practice_main.dir/src/main.cpp.obj.d"
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../practice/inc"
+  "../module2"
+  "../module1"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/workspaces/cmake_cpp/build/module2/CMakeFiles/module2_static.dir/DependInfo.cmake"
+  "/workspaces/cmake_cpp/build/module1/CMakeFiles/module1_shared.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

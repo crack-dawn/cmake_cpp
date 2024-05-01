@@ -13,17 +13,6 @@ message("${PROJECT_NAME} 源文件列表 : ${SOURCE_FILES}")
 add_library(${PROJECT_NAME}  SHARED ${SOURCE_FILES}) # 库类型 .dll / .so 动态库
 add_library(mylib::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
 
-target_include_directories(${PROJECT_NAME}  INTERFACE  ${HEADER_DIRECTORIES})
+target_include_directories(${PROJECT_NAME}  PUBLIC  ${HEADER_DIRECTORIES})
 
 
-set_target_properties(${PROJECT_NAME}  PROPERTIES 
-    PREFIX "lib"
-    OUTPUT_NAME "${PROJECT_NAME}_rename"     # 设置库名称= prefix + outputname
-) 
-
-
-# macro(submodule_task) ##子cmake对变量操作,需要加上PARENT_SCOPE 才会传递给其他cmakelist!
-# endmacro()
- 
-# 调用宏执行子模块任务
-# submodule_task()

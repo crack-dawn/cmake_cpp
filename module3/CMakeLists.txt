@@ -15,17 +15,6 @@ add_library(mylib::${PROJECT_NAME}  ALIAS ${PROJECT_NAME} )
 
 target_include_directories(${PROJECT_NAME}   INTERFACE  ${HEADER_DIRECTORIES})
 
-set_target_properties(${PROJECT_NAME}   PROPERTIES 
-    PREFIX "lib"
-    OUTPUT_NAME "${PROJECT_NAME}_rename"     # 设置库名称= prefix + outputname
-) 
-
-
-# macro(submodule_task) ##子cmake对变量操作,需要加上PARENT_SCOPE 才会传递给其他cmakelist!
-# endmacro()
- 
-# 调用宏执行子模块任务
-# submodule_task()
 
 
 ############################################################
@@ -38,8 +27,8 @@ set_target_properties(${PROJECT_NAME}   PROPERTIES
 
 # Library
 install (TARGETS ${PROJECT_NAME} 
-    DESTINATION ${CMAKE_SOURCE_DIR}/install/${PROJECT_NAME}/lib)
+    DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 
-# Header files
-install(DIRECTORY ${HEADER_DIRECTORIES}
-    DESTINATION ${CMAKE_SOURCE_DIR}/install/${PROJECT_NAME} )
+# # Header files
+# install(DIRECTORY ${HEADER_DIRECTORIES}
+#     DESTINATION ${CMAKE_SOURCE_DIR}/install/${PROJECT_NAME} )
