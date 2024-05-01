@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmodule2_static.a  CMakeFiles/module2_static.dir/module2.cpp.o
-/usr/bin/ranlib libmodule2_static.a

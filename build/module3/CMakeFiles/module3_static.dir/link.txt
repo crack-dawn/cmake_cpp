@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmodule3_static.a  CMakeFiles/module3_static.dir/module3.cpp.o
-/usr/bin/ranlib libmodule3_static.a

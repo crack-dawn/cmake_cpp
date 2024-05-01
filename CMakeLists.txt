@@ -35,11 +35,6 @@ add_subdirectory( ${module2_dir})
 add_subdirectory( ${module3_dir})
 
 
-
-
-
-
-
 #################################################
 #  安装
 # set(install_dir "${CMAKE_SOURCE_DIR}/Debug/bin" ) #安装目录

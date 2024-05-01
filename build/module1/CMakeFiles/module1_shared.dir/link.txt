@@ -1,1 +1,0 @@
-/usr/bin/g++ -fPIC -g  -shared -Wl,-soname,libmodule1_shared.so -o ../Debug/libmodule1_shared.so CMakeFiles/module1_shared.dir/module1.cpp.o  -Wl,-rpath,/workspaces/cmake_cpp/build 

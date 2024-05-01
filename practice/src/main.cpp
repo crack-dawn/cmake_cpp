@@ -1,7 +1,4 @@
-//////////////////////// demo1
-
- #include "main.h"
-
+#include "main.h"
 
 int main()
 {

@@ -1,1 +1,0 @@
-/usr/bin/g++  -g   CMakeFiles/practice_main.dir/src/fun1.cpp.o CMakeFiles/practice_main.dir/src/fun2.cpp.o CMakeFiles/practice_main.dir/src/main.cpp.o  -o ../Debug/practice_main  -Wl,-rpath,/workspaces/cmake_cpp/build:/workspaces/cmake_cpp/build/Debug ../module2/libmodule2_static.a ../Debug/libmodule1_shared.so 
